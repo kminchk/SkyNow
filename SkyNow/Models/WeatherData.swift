@@ -1,18 +1,15 @@
-//
-//  WeatherData.swift
-//  SkyNow
-//
-//  Created by MINDEV on 13/6/2568 BE.
-//
-
-import SwiftUI
-
-struct WeatherData: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
+struct WeatherData: Decodable {
+    let name: String
+    let main: Main
+    let weather: [Weather]
 }
 
-#Preview {
-    WeatherData()
+struct Main: Decodable {
+    let temp: Double
+}
+
+struct Weather: Decodable {
+    let main: String
+    let description: String
+    let icon: String
 }

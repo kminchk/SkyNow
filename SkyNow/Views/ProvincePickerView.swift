@@ -1,18 +1,15 @@
-//
-//  ProvincePickerView.swift
-//  SkyNow
-//
-//  Created by MINDEV on 13/6/2568 BE.
-//
-
+import SwiftUICore
 import SwiftUI
-
 struct ProvincePickerView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    @Binding var selectedProvince: String
+    let provinces = Array(provinceCoordinates.keys)
 
-#Preview {
-    ProvincePickerView()
+    var body: some View {
+        Picker("จังหวัด", selection: $selectedProvince) {
+            ForEach(provinces, id: \.self) { province in
+                Text(province)
+            }
+        }
+        .pickerStyle(MenuPickerStyle())
+    }
 }
