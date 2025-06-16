@@ -1,7 +1,7 @@
 import Foundation
 struct WeatherService {
     func fetchWeather(lat: Double, lon: Double, completion: @escaping (WeatherData?) -> Void) {
-        let apiKey = "d9129fe89a4ac4a88883999f239e6064"
+        let apiKey = getAPIKey(named: "OpenWeatherApiKey")
         let urlStr = "https://api.openweathermap.org/data/2.5/weather?lat=\(lat)&lon=\(lon)&appid=\(apiKey)&units=metric&lang=th"
 
         guard let url = URL(string: urlStr) else { return }

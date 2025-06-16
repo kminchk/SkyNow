@@ -6,7 +6,12 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8CC8BFDF2DFFCB4C00353510 /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CC8BFDE2DFFCB4C00353510 /* Secrets.plist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		8CC8BFDE2DFFCB4C00353510 /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 		8CF898CB2DFBF81D0079B5EF /* SkyNow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkyNow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -32,6 +37,7 @@
 		8CF898C22DFBF81D0079B5EF = {
 			isa = PBXGroup;
 			children = (
+				8CC8BFDE2DFFCB4C00353510 /* Secrets.plist */,
 				8CF898CD2DFBF81D0079B5EF /* SkyNow */,
 				8CF898CC2DFBF81D0079B5EF /* Products */,
 			);
@@ -109,6 +115,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CC8BFDF2DFFCB4C00353510 /* Secrets.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

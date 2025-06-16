@@ -1,0 +1,35 @@
+# Xcode
+DerivedData/
+*.xcworkspace
+*.xcuserstate
+*.xcuserdata
+*.xcsettings
+
+# Build
+build/
+*.app
+*.ipa
+
+# macOS
+.DS_Store
+
+# Swift Package Manager
+Packages/
+.swiftpm/
+.build/
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/
+
+# Fastlane
+fastlane/report.xml
+fastlane/screenshots
+fastlane/test_output
+
+# Secrets
+Secrets.plist
+Config.xcconfig
+
